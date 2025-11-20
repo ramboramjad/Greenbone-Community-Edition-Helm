@@ -45,13 +45,13 @@ gvmd:
 #    MTA_FROM: "<username>@gmail.com"
 #  existingSecret: "gvmd-secrets"
 
-cert:
-  issuerRef:
-    group: certmanager.step.sm
-    kind: ClusterIssuer
-    name: default
-  duration: 730h
-  renewBefore: 72h
+# cert:
+#   issuerRef:
+#     group: certmanager.step.sm
+#     kind: ClusterIssuer
+#     name: default
+#   duration: 730h
+#   renewBefore: 72h
 
 ingress:
   enabled: true
@@ -61,10 +61,10 @@ ingress:
     "traefik.ingress.kubernetes.io/router.tls": "true"
   hosts:
     - host: openvas.example.com
-  tls:
-    - secretName: openvas-ingress-tls-pki
-      hosts:
-        - openvas.example.com
+  # tls:
+  #   - secretName: openvas-ingress-tls-pki
+  #     hosts:
+  #       - openvas.example.com
 
 fullnameOverride: ""
 nameOverride: ""
