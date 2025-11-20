@@ -1,6 +1,7 @@
  # Helm chart for Greenbone Community Edition
 
- This chart was developed to get working as fast as possible, there are things that can be improved on.
+ This chart is imported from https://github.com/fpm-git/Greenbone-Community-Edition-Helm.git. 
+ The original did not include an index.yaml file, so i added it here. Will try to keep them in sync as much as possible. 
 
  ## A few things to note
 
